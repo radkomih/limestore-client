@@ -131,8 +131,14 @@ class App extends React.Component<any, any> {
 
     const storeContract = getContract(STORE_CONTRACT.address, STORE_CONTRACT.json.abi, library, address);
 
+    // const signer = this.state.library.getSigner();
+    // const hashedMessage = ethers.utils.solidityKeccak256(["string"], ["Hello"]);
+    // const messageBytes = ethers.utils.arrayify(hashedMessage);
+    // const signedMessage = await signer.signMessage(messageBytes);
+
+    // building transaction
     // const iface = new ethers.utils.Interface(STORE_CONTRACT.json.abi);
-    // const encodedData = iface.encodeFunctionData("addProduct", [333, 1, 5]);
+    // const encodedData = iface.encodeFunctionData("addProduct", [444, 2, 5]);
     // const signer = library.getSigner();
     // const tx = { to: STORE_CONTRACT.address, data: encodedData };
     // await signer.sendTransaction(tx);
